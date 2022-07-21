@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <title>Homepage for api </title>
+    
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block content %}
+    <p>for all visit  <a href={{url_for('api_all')}}>host/api/all</a>  host/api/all</p>
+    <p>for finding employee data using email , send a get request with param keys as 'email' and 'date_of_query'</p>
+    <p>for Updation requests (creating new user,making changes in user profiles )send a PUT request like  <a href={{url_for('sample')}}>this</a></p></p>
+    
+    
+    {% endblock %}
+  </body>
+</html>
